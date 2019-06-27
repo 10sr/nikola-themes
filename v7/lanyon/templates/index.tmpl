@@ -27,7 +27,7 @@
     </header>
     %if index_teasers:
     <div class="p-summary entry-summary">
-    ${post.text(teaser_only=True, strip_html=True)[:512]}
+    ${post.text(teaser_only=True, strip_html=True)[:256]}
     %else:
     <div class="e-content entry-content">
     ${post.text(teaser_only=False)}
